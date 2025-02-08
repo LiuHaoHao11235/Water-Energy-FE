@@ -4,9 +4,15 @@ import Input from '../views/Input.vue';
 import Analyze from '../views/Analyze.vue';
 
 const routes = [
-  { path: '/', component: Home },
-  { path: '/input', component: Input },
-  { path: '/analyze', component: Analyze },
+  {
+    path: '/',
+    component: Home,
+    children: [
+      { path: 'input', component: Input },
+      { path: 'analyze', component: Analyze },
+      { path: '', redirect: 'input' },
+    ],
+  },
 ];
 
 const router = createRouter({

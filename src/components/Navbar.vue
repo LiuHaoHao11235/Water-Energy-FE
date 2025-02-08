@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
-    <a href="#" class="nav-link">Input</a>
-    <a href="#" class="nav-link">Analyze</a>
+    <router-link to="/input" class="nav-link">Input</router-link>
+    <router-link to="/analyze" class="nav-link">Analyze</router-link>
   </div>
 </template>
 

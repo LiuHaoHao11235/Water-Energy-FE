@@ -2,7 +2,7 @@
   <div id="DemoPage">
     <div class="title">
       <img src="../assets/water.png" alt="water" class="icon">
-      <h1>Water</h1>
+      <h1> Water</h1>
     </div>
     <ry-edit-table
       ref="ryEditTable"

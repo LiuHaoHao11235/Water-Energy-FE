@@ -4,7 +4,9 @@
       <el-header class="fixed-header"><Header /></el-header>
       <el-container class="content">
         <el-aside class="sidebar" width="120px"><Navbar /></el-aside>
-        <el-main class="main-content"><WaterTable /> <EnergyTable /></el-main>
+        <el-main class="main-content">
+          <router-view /> 
+        </el-main>
       </el-container>
     </el-container>
   </div>
@@ -12,9 +14,7 @@
 
 <script setup>
 import Header from "@components/Header.vue";
-import Navbar from "../components/Navbar.vue";
-import WaterTable from "../components/WaterTable.vue";
-import EnergyTable from "../components/EnergyTable.vue";
+import Navbar from "@/components/Navbar.vue"; 
 </script>
 
 <style scoped>
@@ -49,7 +49,7 @@ import EnergyTable from "../components/EnergyTable.vue";
 }
 
 .sidebar {
-background-color: aquamarine;
+  background-color: aquamarine;
 }
 
 .main-content {

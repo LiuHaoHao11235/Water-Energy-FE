@@ -2,7 +2,7 @@
   <div id="DemoPage">
     <div class="title">
       <img src="../assets/energy.png" alt="energy" class="icon" />
-      <h1>Energy</h1>
+      <h1> Energy</h1>
     </div>
     <ry-edit-table
       ref="ryEditTable"
