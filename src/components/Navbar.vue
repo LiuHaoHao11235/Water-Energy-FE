@@ -1,51 +1,45 @@
 <template>
-  <nav class="navbar">
-    <ul>
-      <li><a href="#">Input</a></li>
-      <li><a href="#">Analyze</a></li>
-    </ul>
-  </nav>
+  <div class="navbar">
+    <a href="#" class="nav-link">Input</a>
+    <a href="#" class="nav-link">Analyze</a>
+  </div>
 </template>
+
+<script setup>
+</script>
 
 <style scoped>
 .navbar {
-  background-color: green;
-  padding: 15px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 30px 30px;
+  height: auto;
 }
 
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-}
-
-.navbar li {
-  display: inline;
-}
-
-.navbar a {
-  color: white;
+.nav-link {
+  margin-bottom: 10px;
+  color: #005757;
   text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
+  padding: 10px 0;
+  border-radius: 4px;
+  width: 100%;
+  text-align: left;
+  transition: all 0.3s ease;
 }
 
-.navbar a:hover {
+.nav-link:hover {
+  color: #007f7f; 
+  font-weight: bold;
+  transform: scale(1.05);
+}
+
+.nav-link:active {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-  .navbar ul {
-    flex-direction: column;
-    gap: 10px;
-  }
+.nav-link:last-child {
+  margin-bottom: 0;
 }
 </style>
